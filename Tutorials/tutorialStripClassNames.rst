@@ -1,7 +1,7 @@
 .. _stripclassnames:
 
-Strip Class Names from a MicroEJ Firmware
-=========================================
+Strip Java Class Names from a MicroEJ Firmware
+==============================================
 
 By default, when a class is used (due to one of its methods being called for example), the name of the class is embedded too.
 Embedding the name of every class is rarely useful and takes a lot of flash memory.
