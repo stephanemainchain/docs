@@ -11,7 +11,7 @@ Code Analysis with SonarQube™
 SonarQube is a an open source platform for continuous inspection of code quality.
 SonarQube offers reports on duplicated code, coding standards, unit tests, code coverage, code complexity, potential bugs, comments and architecture.
 
-To set it up on your MicroEJ application project, please refer to `this documentation <https://github.com/MicroEJ/ExampleTool-Sonar/blob/master/README.md>`_.
+To set it up on your MicroEJ application project, please refer to `this documentation <https://github.com/MicroEJ/ExampleTool-Sonar>`_.
 It describes:
 
 - how to run a SonarQube server locally,
@@ -93,10 +93,10 @@ For methods,
 Code Style
 ----------
 
-MicroEJ formatting rules for Eclipse can be found here: `Eclipse Java
+MicroEJ recommended formatting rules for Eclipse can be found here: `Eclipse Java
 settings <https://repository.microej.com/packages/formatter/microej_formatter-13.xml>`__.
 
-These rules must be set (and committed) for each project (``.settings``
+These rules must be set (and committed) for each project (in ``.settings``
 directory). Then, the committed files must not have any warning or
 error.
 
@@ -183,8 +183,8 @@ Best Practices to simplify maintenance
 - Use ``+`` operator for single line string concatenation, use a
   StringBuilder otherwise.
 
-Known performance issues
-------------------------
+Performance considerations
+--------------------------
 
 - Avoid using ``Calendar.getInstance()`` for a repeated operation. It
   creates a new instance of Calendar for each call. Prefer using the
