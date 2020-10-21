@@ -190,8 +190,8 @@ Known performance issues
   creates a new instance of Calendar for each call. Prefer using the
   same instance when possible.
 - Avoid using the Calendar to compute fields to display a watch face
-  for example. The computation of the fields of a Calendar is pretty
-  slow. In the case of a watch face prefer maintaining a watch model
+  for example. The computation of the fields of a Calendar may affect
+  performance. In the case of a watch face prefer maintaining a watch model
   (with one field per data: second, minute, hour, etc.) that updates
   its fields every x milliseconds, then every x seconds or minutes, the
   model can be updated using a calendar. An update on an NTP can also
